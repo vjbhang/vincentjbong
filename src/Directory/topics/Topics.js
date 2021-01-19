@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Container } from "./Topics.styled";
+import React from "react";
 import { Link, Switch, Route, useRouteMatch } from "react-router-dom";
 
 import Topic from "./topic";
