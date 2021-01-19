@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Container} from './Landing.styled';
+import { Container } from "./Landing.styled";
 
 export function Landing() {
   const [count, setCount] = useState(0);
@@ -7,5 +7,4 @@ export function Landing() {
   const decreaseCount = () => setCount(count - 1);
 
   return <Container>Landing</Container>;
- 
 }

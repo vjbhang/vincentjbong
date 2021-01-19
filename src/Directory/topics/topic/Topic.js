@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Container} from './Topic.styled';
+import { Container } from "./Topic.styled";
 import { useParams } from "react-router-dom";
 
 export function Topic() {

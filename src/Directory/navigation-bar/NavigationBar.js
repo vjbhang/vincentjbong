@@ -1,12 +1,7 @@
 import React, { useState } from "react";
-import {Container} from './NavigationBar.styled';
+import { Container } from "./NavigationBar.styled";
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 // Components
 import Topics from "../topics";
@@ -16,7 +11,7 @@ import Landing from "../landing";
 
 export function NavigationBar() {
   return (
-  <Router>
+    <Router>
       <div>
         <ul>
           <li>
@@ -37,5 +32,5 @@ export function NavigationBar() {
         </Switch>
       </div>
     </Router>
-  )
+  );
 }
