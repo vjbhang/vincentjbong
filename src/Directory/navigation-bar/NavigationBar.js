@@ -1,6 +1,7 @@
 import React from "react";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { useMediaQuery } from 'react-responsive';
 
 // styled
 import {
@@ -23,6 +24,7 @@ import Contact from "../contact";
 import TechStack from "../tech-stack";
 
 export function NavigationBar() {
+  const isTabletOrMobileDevice = useMediaQuery({ query: '(max-device-width: 1224px)'});
   return (
     <Router>
       <HeaderContainer>
@@ -36,7 +38,7 @@ export function NavigationBar() {
         </Title>
       </HeaderContainer>
       <NavigationBarContainer>
-        <LinkContainer>
+        <LinkContainer isMobile={isTabletOrMobileDevice}>
           <LinkWrapper>
             <Link className="link" to="/">
               Home

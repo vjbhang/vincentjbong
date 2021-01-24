@@ -1,13 +1,17 @@
 import React from "react";
 import { Container, Wrapper, Title, Point } from "./TechStack.styled";
+import { useMediaQuery } from 'react-responsive';
+
 
 import "./TechStack.css";
 
 export function TechStack() {
+  const isTabletOrMobileDevice = useMediaQuery({ query: '(max-device-width: 1224px)'});
+
   return (
     <>
-      <Container height="420px">
-        <Wrapper width="30%">
+      <Container isMobile={isTabletOrMobileDevice} height="420px">
+        <Wrapper order={2} isMobile={isTabletOrMobileDevice} width="30%">
           <Title className="codetext">Design</Title>
           <Point className="codetext">
             - UI design + figma
@@ -29,7 +33,7 @@ export function TechStack() {
             <br />- experience working with designers
           </Point>
         </Wrapper>
-        <Wrapper width="55%">
+        <Wrapper order={1} isMobile={isTabletOrMobileDevice} width="55%">
           <Title className="codetext">Front-End</Title>
           <Point className="codetext">
             - react & react-native ★★★
@@ -55,7 +59,7 @@ export function TechStack() {
             <br />- proficient with libraries ★★★
           </Point>
         </Wrapper>
-        <Wrapper width="30%">
+        <Wrapper isMobile={isTabletOrMobileDevice} width="30%">
           <Title className="codetext">Back-End</Title>
           <Point className="codetext">
             - MySQL, PostgreSQL
@@ -72,8 +76,9 @@ export function TechStack() {
           </Point>
         </Wrapper>
       </Container>
-      <Container height="100px">
-        <Wrapper width="100%">
+      <Container isMobile={isTabletOrMobileDevice}>
+        <Wrapper isMobile={isTabletOrMobileDevice} width="100%">
+          <Title className="codetext">Languages, etc.</Title>
           <Point className="codetext">
             &emsp;&emsp;&emsp;&emsp;- Languages: javascript ★★★, python ★★✰,
             java ★✰✰

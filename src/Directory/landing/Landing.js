@@ -9,6 +9,7 @@ import {
   Triangle,
 } from "./Landing.styled";
 import { Link } from "react-router-dom";
+import { useMediaQuery } from 'react-responsive';
 
 import "./Landing.css";
 
@@ -19,14 +20,15 @@ import Polygon from "../../Assets/Arrow.png";
 // screen
 
 export function Landing() {
+  const isTabletOrMobileDevice = useMediaQuery({ query: '(max-device-width: 1224px)'});
   return (
     <>
-      <Container marginTop={"20px"}>
-        <BodyDiv>
-          <IntroAvatarContainer>
+      <Container>
+        <BodyDiv isMobile={isTabletOrMobileDevice}>
+          <IntroAvatarContainer isMobile={isTabletOrMobileDevice}>
             <Image src={AvatarPic} alt="me" />
           </IntroAvatarContainer>
-          <IntroWritingContainer>
+          <IntroWritingContainer isMobile={isTabletOrMobileDevice}>
             <h2 className="text">I can help you build up your application!</h2>
             <p className="text">
               Welcome to my Digital Workshop! My name is Vincent. At your
@@ -48,35 +50,35 @@ export function Landing() {
           </IntroWritingContainer>
         </BodyDiv>
       </Container>
-      <Container>
-        <BodyDiv width="50%">
-          <Box color="#D28B8B">
+      <Container marginTop={"40px"}>
+        <BodyDiv isMobile={isTabletOrMobileDevice} width="50%">
+          <Box isMobile={isTabletOrMobileDevice} color="#D28B8B">
             <div className="box">
-              <h2>Consult</h2>
+              <h3>Consult</h3>
               <p>-</p>
               <p>What's your idea?</p>
             </div>
           </Box>
-          <Triangle src={Polygon} />
-          <Box color="#B7FFC2">
+          <Triangle isMobile={isTabletOrMobileDevice} src={Polygon} />
+          <Box isMobile={isTabletOrMobileDevice} color="#B7FFC2">
             <div className="box">
-              <h2>Sketch</h2>
+              <h3>Sketch</h3>
               <p>-</p>
               <p>I'll help draw it out for you. </p>
             </div>
           </Box>
-          <Triangle src={Polygon} />
-          <Box color="#BCDADC">
+          <Triangle isMobile={isTabletOrMobileDevice} src={Polygon} />
+          <Box isMobile={isTabletOrMobileDevice} color="#BCDADC">
             <div className="box">
-              <h2>Code</h2>
+              <h3>Code</h3>
               <p>-</p>
               <p>Enjoy my magic show! </p>
             </div>
           </Box>
-          <Triangle src={Polygon} />
-          <Box color="#BCBFDC">
+          <Triangle isMobile={isTabletOrMobileDevice} src={Polygon} />
+          <Box isMobile={isTabletOrMobileDevice} color="#BCBFDC">
             <div className="box">
-              <h2>Feedback</h2>
+              <h3>Feedback</h3>
               <p>-</p>
               <p>Let's go through it.</p>
             </div>

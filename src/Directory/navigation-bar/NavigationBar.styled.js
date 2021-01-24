@@ -12,6 +12,7 @@ export const HeaderContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 `;
 
 export const Title = styled.h2`
@@ -30,6 +31,7 @@ export const NavigationBarContainer = styled.div`
   background-color: #1e1e1e;
   width: 100%;
   height: 45px;
+  overflow-x: hidden;
 `;
 
 export const LinkContainer = styled.div`
@@ -37,7 +39,7 @@ export const LinkContainer = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: space-around;
-  width: 40%;
+  width: ${props => props.isMobile ? "100%" : "40%"};
   height: 100%;
 `;
 
