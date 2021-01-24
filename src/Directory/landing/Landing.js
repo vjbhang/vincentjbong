@@ -27,22 +27,23 @@ export function Landing() {
             <Image src={AvatarPic} alt="me" />
           </IntroAvatarContainer>
           <IntroWritingContainer>
-            <h2>I will help you build up your application!</h2>
-            <p>
+            <h2 className="text">I can help you build up your application!</h2>
+            <p className="text">
               Welcome to my Digital Workshop! My name is Vincent. At your
               service! I am a freelancer offering my services as a fullstack
-              developer. I primarily provide Front-End work but I can cater to
-              your needs.
+              developer. I am primarily servicing Front-End work but am amiable
+              for other kinds of work.
             </p>
-            <p>
+            <p className="text">
               Do you want to build an app from scratch? Do you have no idea
               where to start and who to talk to? Through a 4-step process, I can
               help build your solution. I am an excellent communicator and your
               work with me will be done in a team setting where you are the
-              leader. 
+              leader.
             </p>
-            <p>
-            For more information, please feel free to <Link to="/contact">contact me.</Link>
+            <p className="text">
+              For more information, please feel free to{" "}
+              <Link to="/contact">contact me.</Link>
             </p>
           </IntroWritingContainer>
         </BodyDiv>

@@ -15,7 +15,7 @@ import {
 import "./NavigationBar.css";
 
 // Components
-import Topics from "../topics";
+// import Topics from "../topics";
 
 // Screens
 import Landing from "../landing";
@@ -41,11 +41,11 @@ export function NavigationBar() {
               Home
             </Link>
           </LinkWrapper>
-          <LinkWrapper>
+          {/* <LinkWrapper>
             <Link className="link" to="/topics">
               Today I Learned
             </Link>
-          </LinkWrapper>
+          </LinkWrapper> */}
           <LinkWrapper>
             <Link className="link" to="/contact">
               Contact
@@ -55,9 +55,9 @@ export function NavigationBar() {
       </NavigationBarContainer>
 
       <Switch>
-        <Route path="/topics">
+        {/* <Route path="/topics">
           <Topics />
-        </Route>
+        </Route> */}
         <Route path="/contact">
           <Contact />
         </Route>
