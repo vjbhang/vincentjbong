@@ -1,16 +1,21 @@
 import React from "react";
 import { Container, Wrapper, Title, Point } from "./TechStack.styled";
-import { useMediaQuery } from 'react-responsive';
-
+import { useMediaQuery } from "react-responsive";
+import { Link } from "react-router-dom";
 
 import "./TechStack.css";
 
 export function TechStack() {
-  const isTabletOrMobileDevice = useMediaQuery({ query: '(max-device-width: 1224px)'});
+  const isTabletOrMobileDevice = useMediaQuery({
+    query: "(max-device-width: 1224px)",
+  });
 
   return (
     <>
       <Container isMobile={isTabletOrMobileDevice} height="420px">
+        <p className="text">
+          For a full resume, feel free to <Link to="/contact">contact me.</Link>{" "}
+        </p>
         <Wrapper order={2} isMobile={isTabletOrMobileDevice} width="30%">
           <Title className="codetext">Design</Title>
           <Point className="codetext">

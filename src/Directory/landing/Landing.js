@@ -9,7 +9,7 @@ import {
   Triangle,
 } from "./Landing.styled";
 import { Link } from "react-router-dom";
-import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from "react-responsive";
 
 import "./Landing.css";
 
@@ -20,7 +20,9 @@ import Polygon from "../../Assets/Arrow.png";
 // screen
 
 export function Landing() {
-  const isTabletOrMobileDevice = useMediaQuery({ query: '(max-device-width: 1224px)'});
+  const isTabletOrMobileDevice = useMediaQuery({
+    query: "(max-device-width: 1224px)",
+  });
   return (
     <>
       <Container>

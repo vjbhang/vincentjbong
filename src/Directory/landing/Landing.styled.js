@@ -13,22 +13,23 @@ export const Container = styled.div`
 `;
 
 export const BodyDiv = styled.div`
-  width: ${(props) => props.isMobile ? "100%" : props.width || "70%"};
+  width: ${(props) => (props.isMobile ? "100%" : props.width || "70%")};
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: ${props => props.isMobile ? "column" : "row"};
+  flex-direction: ${(props) => (props.isMobile ? "column" : "row")};
 `;
 
 export const IntroAvatarContainer = styled.div`
-  width: ${props => props.isMobile ? "33%" : "20%"};
+  width: ${(props) => (props.isMobile ? "33%" : "20%")};
+  max-width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 
 export const IntroWritingContainer = styled.div`
-  width: ${props => props.isMobile ? "88%" : "70%"};
+  width: ${(props) => (props.isMobile ? "88%" : "70%")};
   display: flex;
   justify-content: left;
   align-items: left;
@@ -47,16 +48,16 @@ export const Box = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: ${props => props.isMobile ? "22vh" : "18vh"};
-  width: ${props => props.isMobile ? "100%" : "18vh"};
-  border-radius: ${props => props.isMobile ? "0px" : "16px"};
+  height: ${(props) => (props.isMobile ? "22vh" : "18vh")};
+  width: ${(props) => (props.isMobile ? "100%" : "18vh")};
+  border-radius: ${(props) => (props.isMobile ? "0px" : "16px")};
   flex-direction: column;
   background-color: ${(props) => props.color || "pink"};
-  padding: ${props => props.isMobile ? "0px" : "4px"};
+  padding: ${(props) => (props.isMobile ? "0px" : "4px")};
 `;
 
 export const Triangle = styled.img`
   width: 2vw;
   margin: 0px 1vw;
-  display: ${props => props.isMobile ? "none" : "initial"};
+  display: ${(props) => (props.isMobile ? "none" : "initial")};
 `;

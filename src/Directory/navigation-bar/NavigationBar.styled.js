@@ -39,7 +39,7 @@ export const LinkContainer = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: space-around;
-  width: ${props => props.isMobile ? "100%" : "40%"};
+  width: ${(props) => (props.isMobile ? "100%" : "40%")};
   height: 100%;
 `;
 

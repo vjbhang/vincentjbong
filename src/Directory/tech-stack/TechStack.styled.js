@@ -4,26 +4,27 @@ export const Container = styled.div`
   position: relative;
   top: 0px;
   left: 0px;
-  height: ${props => props.isMobile ? "initial" : props.height};
-  width: ${props => props.isMobile ? "100%" : "50%"};
+  height: ${(props) => (props.isMobile ? "initial" : props.height)};
+  width: ${(props) => (props.isMobile ? "100%" : "50%")};
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 32px;
+  margin-top: ${(props) => (props.isMobile ? "0px" : "32px")};
   margin-left: auto;
   margin-right: auto;
-  flex-direction: ${props => props.isMobile ? "column" : "row"};
+  flex-direction: ${(props) => (props.isMobile ? "column" : "row")};
 `;
 
 export const Wrapper = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-  margin: ${props => props.isMobile ? "8px 0px" : "0px 8px"};
+  margin: ${(props) => (props.isMobile ? "8px 0px" : "0px 8px")};
   border-radius: 16px;
-  width: ${(props) => props.isMobile ? "86%" : props.width || "initial"};
+  width: ${(props) => (props.isMobile ? "86%" : props.width || "initial")};
   background-color: ${(props) => props.color || "#2d2d2d"};
-  order: ${props => props.isMobile ? props.order === 1 ? 1 : 2 : "initial"};
+  order: ${(props) =>
+    props.isMobile ? (props.order === 1 ? 1 : 2) : "initial"};
 `;
 
 export const Title = styled.h3`
