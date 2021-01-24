@@ -5,3 +5,5 @@ export function Topic() {
   let { topicId } = useParams();
   return <h3>Requested topic ID: {topicId}</h3>;
 }
+
+function topicSelector(topic) {}
