@@ -20,6 +20,7 @@ import "./NavigationBar.css";
 // Screens
 import Landing from "../landing";
 import Contact from "../contact";
+import TechStack from "../tech-stack";
 
 export function NavigationBar() {
   return (
@@ -41,6 +42,11 @@ export function NavigationBar() {
               Home
             </Link>
           </LinkWrapper>
+          <LinkWrapper>
+            <Link className="link" to="/tech">
+              Tech Stack
+            </Link>
+          </LinkWrapper>
           {/* <LinkWrapper>
             <Link className="link" to="/topics">
               Today I Learned
@@ -60,6 +66,9 @@ export function NavigationBar() {
         </Route> */}
         <Route path="/contact">
           <Contact />
+        </Route>
+        <Route path="/tech">
+          <TechStack />
         </Route>
         <Route exact path="/">
           <Landing />
