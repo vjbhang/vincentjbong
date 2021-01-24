@@ -6,4 +6,4 @@ export function Topic() {
   return <h3>Requested topic ID: {topicId}</h3>;
 }
 
-function topicSelector(topic) {}
+// function topicSelector(topic) {}
