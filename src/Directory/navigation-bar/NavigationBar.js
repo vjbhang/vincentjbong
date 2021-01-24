@@ -19,6 +19,7 @@ import Topics from "../topics";
 
 // Screens
 import Landing from "../landing";
+import Contact from "../contact";
 
 export function NavigationBar() {
   return (
@@ -30,7 +31,7 @@ export function NavigationBar() {
           <span style={{ color: "#1E79DB" }}>Bong's</span>
         </Title>
         <Title className="title">
-          <span style={{ color: "#CE8349" }}>Digital Space</span>{" "}
+          <span style={{ color: "#CE8349" }}>Digital Workshop</span>{" "}
         </Title>
       </HeaderContainer>
       <NavigationBarContainer>
@@ -42,7 +43,12 @@ export function NavigationBar() {
           </LinkWrapper>
           <LinkWrapper>
             <Link className="link" to="/topics">
-              Topics
+              Today I Learned
+            </Link>
+          </LinkWrapper>
+          <LinkWrapper>
+            <Link className="link" to="/contact">
+              Contact
             </Link>
           </LinkWrapper>
         </LinkContainer>
@@ -52,7 +58,10 @@ export function NavigationBar() {
         <Route path="/topics">
           <Topics />
         </Route>
-        <Route path="/">
+        <Route path="/contact">
+          <Contact />
+        </Route>
+        <Route exact path="/">
           <Landing />
         </Route>
       </Switch>
