@@ -85,12 +85,9 @@ export function TechStack() {
         <Wrapper isMobile={isTabletOrMobileDevice} width="100%">
           <Title className="codetext">Languages, etc.</Title>
           <Point className="codetext">
-            &emsp;&emsp;&emsp;&emsp;- Languages: javascript ★★★, python ★★✰,
-            java ★✰✰
+            - Languages: javascript ★★★, python ★★✰, java ★✰✰
             <br />
-            <br />
-            &emsp;&emsp;&emsp;&emsp;- Proficient understanding of data
-            structures
+            <br />- Proficient understanding of data structures
           </Point>
         </Wrapper>
       </Container>
