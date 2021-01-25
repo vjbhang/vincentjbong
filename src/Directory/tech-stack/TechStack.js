@@ -12,10 +12,10 @@ export function TechStack() {
 
   return (
     <>
+      <p className="text">
+        For a full resume, feel free to <Link to="/contact">contact me.</Link>{" "}
+      </p>
       <Container isMobile={isTabletOrMobileDevice} height="420px">
-        <p className="text">
-          For a full resume, feel free to <Link to="/contact">contact me.</Link>{" "}
-        </p>
         <Wrapper order={2} isMobile={isTabletOrMobileDevice} width="30%">
           <Title className="codetext">Design</Title>
           <Point className="codetext">

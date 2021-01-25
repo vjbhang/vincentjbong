@@ -1,6 +1,6 @@
 import React from "react";
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link, NavLink } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 
 // styled
@@ -42,14 +42,14 @@ export function NavigationBar() {
       <NavigationBarContainer>
         <LinkContainer isMobile={isTabletOrMobileDevice}>
           <LinkWrapper>
-            <Link className="link" to="/">
+            <NavLink exact className="link" activeClassName="activelink" to="/">
               Home
-            </Link>
+            </NavLink>
           </LinkWrapper>
           <LinkWrapper>
-            <Link className="link" to="/tech">
+            <NavLink className="link" activeClassName="activelink" to="/tech">
               Tech Stack
-            </Link>
+            </NavLink>
           </LinkWrapper>
           {/* <LinkWrapper>
             <Link className="link" to="/topics">
@@ -57,9 +57,9 @@ export function NavigationBar() {
             </Link>
           </LinkWrapper> */}
           <LinkWrapper>
-            <Link className="link" to="/contact">
+            <NavLink className="link" activeClassName="activelink" to="/contact">
               Contact
-            </Link>
+            </NavLink>
           </LinkWrapper>
         </LinkContainer>
       </NavigationBarContainer>

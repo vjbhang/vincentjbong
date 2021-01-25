@@ -6,6 +6,10 @@
   font-weight: bold;
 }
 
+.activelink {
+  border-bottom: 2px solid #2f5fce;
+}
+
 .link:hover {
   border-bottom: 2px solid #2f5fce;
 }

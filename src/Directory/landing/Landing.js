@@ -31,24 +31,27 @@ export function Landing() {
             <Image src={AvatarPic} alt="me" />
           </IntroAvatarContainer>
           <IntroWritingContainer isMobile={isTabletOrMobileDevice}>
-            <h2 className="text">I can help you build up your application!</h2>
-            <p className="text">
-              Welcome to my Digital Workshop! My name is Vincent. At your
-              service! I am a freelancer offering my services as a fullstack
-              developer. I am primarily servicing Front-End work but am amiable
-              for other kinds of work.
-            </p>
-            <p className="text">
-              Do you want to build an app from scratch? Do you have no idea
-              where to start and who to talk to? Through a 4-step process, I can
-              help build your solution. I am an excellent communicator and your
-              work with me will be done in a team setting where you are the
-              leader.
-            </p>
-            <p className="text">
-              For more information, please feel free to{" "}
-              <Link to="/contact">contact me.</Link>
-            </p>
+            <div>
+              <h2 className="introtext">I can help you build up your application!</h2>
+              <p className="introtext">
+                Welcome to my Digital Workshop! My name is Vincent. At your
+                service! I am a freelancer offering my services as a fullstack
+                developer. I am primarily servicing Front-End work but am amiable
+                for other kinds of work.
+              </p>
+              <p className="introtext">
+                Do you want to build an app from scratch? Do you have no idea
+                where to start and who to talk to? Through a 4-step process, I can
+                help build your solution. I am an excellent communicator and your
+                work with me will be done in a team setting where you are the
+                leader.
+              </p>
+              <p className="introtext">
+                For more information, please feel free to{" "}
+                <Link to="/contact">contact me.</Link>
+              </p>
+
+            </div>
           </IntroWritingContainer>
         </BodyDiv>
       </Container>
