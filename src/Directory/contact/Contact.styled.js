@@ -15,6 +15,6 @@ export const ContactWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: ${(props) => (props.isMobile ? "88%" : "50%")};
   flex-direction: column;
 `;
