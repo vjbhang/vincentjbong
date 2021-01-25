@@ -1,6 +1,11 @@
 import React from "react";
 
-import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink,
+} from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 
 // styled
@@ -57,7 +62,11 @@ export function NavigationBar() {
             </Link>
           </LinkWrapper> */}
           <LinkWrapper>
-            <NavLink className="link" activeClassName="activelink" to="/contact">
+            <NavLink
+              className="link"
+              activeClassName="activelink"
+              to="/contact"
+            >
               Contact
             </NavLink>
           </LinkWrapper>
