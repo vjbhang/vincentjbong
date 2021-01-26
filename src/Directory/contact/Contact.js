@@ -11,6 +11,7 @@ export function Contact() {
     <Container>
       <ContactWrapper isMobile={isTabletOrMobileDevice}>
         <h3 className="text">E-mail: bhangjiwon@pm.me</h3>
+        <h3 className="text"><a href="https://github.com/vjbhang">https://github.com/vjbhang</a></h3>
         <p className="text">
           <i>Please feel free to contact me.</i>
         </p>
