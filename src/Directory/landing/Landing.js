@@ -42,7 +42,8 @@ export function Landing() {
               <p className="introtext">
                 Do you want to build an app from scratch? Do you have no idea
                 where to start and who to talk to? Through a 4-step process, I
-                can help build your solution. In a team setting, let's work to build up your app.
+                can help build your solution. In a team setting, let's work to
+                build up your app.
               </p>
               <p className="introtext">
                 For more information, please feel free to{" "}

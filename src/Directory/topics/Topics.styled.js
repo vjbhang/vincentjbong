@@ -6,8 +6,13 @@ export const SideBarContainer = styled.div`
   left: 0px;
   height: calc(100% - 178px);
   width: 25%;
-  background-color: #FAFAFA;
-  box-shadow: 
+  background-color: #fafafa;
+  box-shadow: ;
+`;
+
+export const Title = styled.h2`
+  font-weight: bold;
+  margin-left: 5%;
 `;
 
 export const BodyContainer = styled.div`
@@ -23,7 +28,7 @@ export const LinkWrapper = styled.div`
   width: 100%;
   justify-content: flex-start;
   align-items: center;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   text-align: left;
 `;
 

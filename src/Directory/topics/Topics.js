@@ -5,18 +5,23 @@ import Topic from "./topic";
 import content from "./content";
 
 // Styled
-import {SideBarContainer, BodyContainer, LinkWrapper, Date} from "./Topics.styled";
+import {
+  Title,
+  SideBarContainer,
+  BodyContainer,
+  LinkWrapper,
+  Date,
+} from "./Topics.styled";
 
 export function Topics() {
   let match = useRouteMatch();
 
-
   console.log(content);
-  const contentLink = Object.keys(content).map(function(key) {
+  const contentLink = Object.keys(content).map(function (key) {
     console.log(key, content[key]);
     const Title = () => {
       if (content[key].length > 12) {
-        return content[key].slice(0,10) + "...";
+        return content[key].slice(0, 10) + "...";
       } else {
         return content[key];
       }
@@ -24,16 +29,17 @@ export function Topics() {
     return (
       <LinkWrapper>
         <Date className="date">{`${key}   `}</Date>
-        <NavLink className="tillink" to={`${match.url}/${key}-${content[key]}`}>{Title()}</NavLink>
+        <NavLink className="tillink" to={`${match.url}/${key}-${content[key]}`}>
+          {Title()}
+        </NavLink>
       </LinkWrapper>
-    )
-  })
-
+    );
+  });
 
   return (
     <>
       <SideBarContainer>
-        <h2>Topics</h2>
+        <Title className="title">Topics</Title>
         {contentLink}
       </SideBarContainer>
 

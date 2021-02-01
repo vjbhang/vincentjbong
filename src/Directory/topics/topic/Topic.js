@@ -5,8 +5,7 @@ export function Topic() {
   let { topicId } = useParams();
   useEffect(() => {
     console.log(topicId);
-  })
+  });
 
   return <h3>Requested topic ID: {topicId}</h3>;
 }
-
