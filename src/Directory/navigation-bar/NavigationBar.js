@@ -17,9 +17,6 @@ import {
   Title,
 } from "./NavigationBar.styled";
 
-// styles
-import "./NavigationBar.css";
-
 // Components
 // import Topics from "../topics";
 
@@ -27,6 +24,7 @@ import "./NavigationBar.css";
 import Landing from "../landing";
 import Contact from "../contact";
 import TechStack from "../tech-stack";
+import Topics from "../topics";
 
 export function NavigationBar() {
   const isTabletOrMobileDevice = useMediaQuery({
@@ -56,11 +54,11 @@ export function NavigationBar() {
               Tech Stack
             </NavLink>
           </LinkWrapper>
-          {/* <LinkWrapper>
-            <Link className="link" to="/topics">
+          <LinkWrapper>
+            <NavLink className="link" to="/topics">
               Today I Learned
-            </Link>
-          </LinkWrapper> */}
+            </NavLink>
+          </LinkWrapper>
           <LinkWrapper>
             <NavLink
               className="link"
@@ -74,9 +72,9 @@ export function NavigationBar() {
       </NavigationBarContainer>
 
       <Switch>
-        {/* <Route path="/topics">
+        <Route path="/topics">
           <Topics />
-        </Route> */}
+        </Route>
         <Route path="/contact">
           <Contact />
         </Route>

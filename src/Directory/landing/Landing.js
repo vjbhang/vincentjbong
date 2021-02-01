@@ -11,8 +11,6 @@ import {
 import { Link } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 
-import "./Landing.css";
-
 // assets
 import AvatarPic from "../../Assets/avatar.jpg";
 import Polygon from "../../Assets/Arrow.png";
@@ -44,9 +42,7 @@ export function Landing() {
               <p className="introtext">
                 Do you want to build an app from scratch? Do you have no idea
                 where to start and who to talk to? Through a 4-step process, I
-                can help build your solution. I am an excellent communicator and
-                your work with me will be done in a team setting where you are
-                the leader.
+                can help build your solution. In a team setting, let's work to build up your app.
               </p>
               <p className="introtext">
                 For more information, please feel free to{" "}

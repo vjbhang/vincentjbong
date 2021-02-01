@@ -3,8 +3,6 @@ import { Container, Wrapper, Title, Point } from "./TechStack.styled";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
 
-import "./TechStack.css";
-
 export function TechStack() {
   const isTabletOrMobileDevice = useMediaQuery({
     query: "(max-device-width: 1224px)",
