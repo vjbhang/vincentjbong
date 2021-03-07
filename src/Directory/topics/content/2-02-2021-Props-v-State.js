@@ -1,9 +1,9 @@
 export const title = "World";
 
 export const body1 = `
-hello world. testing tab.\  
-testing.\
-testing testing\
+hello world. testing tab.
+testing.
+testing testing
 hello  world
 `;
 
