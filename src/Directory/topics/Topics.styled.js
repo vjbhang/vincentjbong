@@ -5,7 +5,7 @@ export const SideBarContainer = styled.div`
   top: 178px;
   left: 0px;
   height: calc(100% - 178px);
-  width: 25%;
+  width: 309px;
   background-color: #fafafa;
   box-shadow: ;
 `;
@@ -17,7 +17,7 @@ export const Title = styled.h2`
 
 export const BodyContainer = styled.div`
   position: relative;
-  left: 25%;
+  left: 309px;
 `;
 export const LinkWrapper = styled.div`
   display: flex;

@@ -27,7 +27,7 @@ export function Topics() {
       }
     };
     return (
-      <LinkWrapper>
+      <LinkWrapper key={`${key}-${content[key]}`}>
         <Date className="date">{`${key}   `}</Date>
         <NavLink className="tillink" to={`${match.url}/${key}-${content[key]}`}>
           {Title()}

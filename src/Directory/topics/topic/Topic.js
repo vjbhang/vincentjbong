@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import ContentSelector from "../content/content-selector";
 
 export function Topic() {
   let { topicId } = useParams();
   useEffect(() => {
-    console.log(topicId);
+    console.log("topicId:", topicId);
   });
-
-  return <h3>Requested topic ID: {topicId}</h3>;
+  return <ContentSelector topicId={topicId} />;
 }

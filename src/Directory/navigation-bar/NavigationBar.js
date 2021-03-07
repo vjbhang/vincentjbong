@@ -54,11 +54,11 @@ export function NavigationBar() {
               Tech Stack
             </NavLink>
           </LinkWrapper>
-          <LinkWrapper>
+          {/* <LinkWrapper>
             <NavLink className="link" to="/topics">
               Today I Learned
             </NavLink>
-          </LinkWrapper>
+          </LinkWrapper> */}
           <LinkWrapper>
             <NavLink
               className="link"

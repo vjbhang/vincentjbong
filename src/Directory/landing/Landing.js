@@ -31,7 +31,7 @@ export function Landing() {
           <IntroWritingContainer isMobile={isTabletOrMobileDevice}>
             <div>
               <h2 className="introtext">
-                I can help you build up your application!
+                I am a Freelancing Front-End Developer!
               </h2>
               <p className="introtext">
                 Welcome to my Digital Workshop! My name is Vincent. At your
@@ -40,10 +40,8 @@ export function Landing() {
                 amiable for other kinds of work.
               </p>
               <p className="introtext">
-                Do you want to build an app from scratch? Do you have no idea
-                where to start and who to talk to? Through a 4-step process, I
-                can help build your solution. In a team setting, let's work to
-                build up your app.
+                Do you want to build an app from scratch? Through a 4-step
+                process, I can help build your solution.
               </p>
               <p className="introtext">
                 For more information, please feel free to{" "}

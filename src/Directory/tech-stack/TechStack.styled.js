@@ -5,7 +5,7 @@ export const Container = styled.div`
   top: 0px;
   left: 0px;
   height: ${(props) => (props.isMobile ? "initial" : props.height)};
-  width: ${(props) => (props.isMobile ? "100%" : "50%")};
+  width: ${(props) => (props.isMobile ? "100%" : "60%")};
   display: flex;
   justify-content: center;
   align-items: center;
